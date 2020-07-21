@@ -1,11 +1,9 @@
 export const getUserInfo = gitHubProfile => {
   return fetch(`https://api.github.com/users/${gitHubProfile}`)
-    .then(res => res.json())
-    .then(data => data);
+    .then(res => res.json());
 };
 
 export const getAllRepos = gitHubProfile => {
-  return fetch(`https://api.github.com/users/${gitHubProfile}`)
-    .then(res => res.json())
-    .then(data => console.log(data));
+  return fetch(`https://api.github.com/users/${gitHubProfile}/repos`)
+    .then(res => res.json());
 };
