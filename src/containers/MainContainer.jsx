@@ -10,7 +10,7 @@ export default class MainContainer extends Component {
     followers: '', 
     following: '', 
     html_url: '',
-    repos: ''
+    repos: []
   };
 
   handleChange = ({ target }) => {
@@ -33,7 +33,7 @@ export default class MainContainer extends Component {
     return (
       <div>
         <UserInput gitHubProfile={gitHubProfile} onChange={this.handleChange} onSubmit={this.handleSubmit} />
-        <Display name={name} followers={followers} following={following} html_url={html_url}/>
+        <Display name={name} followers={followers} following={following} html_url={html_url} repos={repos} />
       </div>
     );
   }
