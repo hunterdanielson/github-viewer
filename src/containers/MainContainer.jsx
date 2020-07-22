@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { getAllRepos, getUserInfo } from '../services/gitHubApi';
 import UserInput from '../components/userInput/UserInput';
 import Display from '../components/display/Display';
+import Repos from '../components/repos/Repos';
 
 export default class MainContainer extends Component {
   state = {
@@ -34,6 +35,7 @@ export default class MainContainer extends Component {
       <div>
         <UserInput gitHubProfile={gitHubProfile} onChange={this.handleChange} onSubmit={this.handleSubmit} />
         <Display name={name} followers={followers} following={following} html_url={html_url} repos={repos} />
+        <Repos gitHubProfile={gitHubProfile} repos={repos} />
       </div>
     );
   }
