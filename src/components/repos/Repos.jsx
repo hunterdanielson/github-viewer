@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getPRs } from '../../services/gitHubApi';
+// import { getPRs } from '../../services/gitHubApi';
 
-const Repos = ({ gitHubProfile, repos }) => (
+const Repos = ({ repos }) => (
   <>
     <h2>Repos</h2>
     <ul>
@@ -20,7 +20,7 @@ const Repos = ({ gitHubProfile, repos }) => (
 );
 
 Repos.propTypes = {
-  gitHubProfile: PropTypes.string.isRequired,
+  // gitHubProfile: PropTypes.string.isRequired,
   repos: PropTypes.array
 };
 
