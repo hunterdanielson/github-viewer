@@ -16,9 +16,5 @@ exports[`Display component renders Display 1`] = `
   >
     Profile Link
   </a>
-  <h2>
-    Repos
-  </h2>
-  <ul />
 </Fragment>
 `;
